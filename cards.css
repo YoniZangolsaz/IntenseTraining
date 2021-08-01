@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(236, 203, 120);
+}
+.cards {
+    padding: 20px 50px; 
+    background-color: rgb(230, 205, 68);
+    box-shadow: 0 7px 10px 0 rgb(85 85 85 / 50%);
+}
+.cards-fill {
+    margin-top: 100px;
+    
+}
+.btn {
+    margin-top: 30px;
+    margin-left: 30%;
+}
+label {
+    color: brown;
+    font-weight: bold;
+}
+.form-group {
+    margin-top: 5px;
+}
+.error {
+    background: orangered;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+}
+.card {
+    width: 200px;
+    height: 130px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    background-color: rgb(204, 193, 193);
+    border-radius: 4px;
+}
+p {
+    margin: 5px 0 0 5PX;
+    color: rgb(85, 69, 7);
+    font-size: 16px;
+}
+
+.deleteBtn {
+    background: none;
+    color: rgb(214, 47, 47);
+    border: none;
+    padding: 0;
+    margin-right: 5px;
+    display: none;
+}
+.deleteBtn:hover {
+    opacity: 0.7;
+    
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+#cardList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.card:hover .deleteBtn {
+    display: block;
+}
