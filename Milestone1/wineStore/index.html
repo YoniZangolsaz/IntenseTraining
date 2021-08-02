@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/afc75648c9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+  <title>BootStrap</title>
+</head>
+
+<body>
+  <div class="container text-black-50">
+    <div class="row border-bottom">
+      <div class="col-2">
+        <ul class="nav ">
+          <li class="nav-item">
+            <a class="nav-link text-black-50" href="#">About Store</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-8">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-black-50" href="#">Payment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-50" href="#">Shipping</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-50" href="#">Terms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-50" href="#">Refunds</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-50" href="#">Help Center</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2 text-white" id="countries">
+        <div class="nav d-flex justify-content-end">
+          <select id="select-len" class="form-select-md text-black-50 mt-2 border-0 bg-light"
+            aria-label="Default select example">
+            <option value="USD">English 🇺🇸&emsp;</option>
+            <option value="FR">French 🇫🇷&emsp;</option>
+            <option value="ES">Spanish 🇪🇸&emsp;</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-2">
+        <img src="images/wine3.png" alt="wine" style="width: 105px; height:40px;" class="rounded">
+      </div>
+      <div class="col-8">
+        <div class="row">
+          <div class="col-2">
+          </div>
+          <div class="col-8 rounded-pill bg-white" id="search_bar">
+            <div class="row">
+              <div class="col-4">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  ALL CATEGORIES
+                </button>
+              </div>
+              <div class="col-8">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                  </div>
+                  <input type="text" class="form-control border-0" placeholder="Search for product"
+                    aria-label="Search for product" aria-describedby="basic-addon1">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 mt-2">
+            <button id="search_button" type="button" class="btn btn-warning rounded-pill "><i
+                class="fas fa-search px-3"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 mt-3 d-flex justify-content-end">
+        <span id="items">3 items</span>
+        <span class="text-body">($180)</span>
+        <span id="bag"><i class="fas fa-shopping-bag"></i></span>
+        <span id="down"><i class="fas fa-angle-down"></i></span>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-2">
+        <i class="fas fa-align-justify"></i>
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Select Category
+        </button>
+      </div>
+      <div class="col-1">
+
+      </div>
+      <div class="col-5">
+        <ul class="nav justify-content-md-end justify-content-end justify-content-sm-end justify-content-lg-start">
+          <li class="nav-item">
+            <a class="nav-link text-black-50" href="#">popular:</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body " href="#">Blender</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body" href="#">Blender1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body" href="#">Blender2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body" href="#">Blender3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <ul class="nav d-flex justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link text-body" href="#">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body " href="#">Wishlist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body" href="#">Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 px-0">
+        <img src="images/snacks-and-drinks.jpg" alt="sncks" style="width: 100%; height:250px;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8 mx-auto bg-white rounded-pill" id="searchwine">
+        <div class="input-group">
+          <div class="input-group-prepend">
+          </div>
+          <input type="text" class="form-control border-0" placeholder="HOME - CATELOG - OLD WINE"
+            aria-label="HOME-CATELOG-OLD WINE" aria-describedby="basic-addon1">
+          <h6 class="mt-2">Sort By <span class="popular">Popularity </span><span><i
+                class="fas fa-angle-down popular"></i></span></h6>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-1">
+      </div>
+      <div class="col-2 pt-3">
+        <div class="row bg-white">
+          <div class="col-12 border-bottom pt-2 ">
+            <div class="row">
+              <div class="col-6 text-body">
+                <h6>Price</h6>
+              </div>
+              <div class="col-6 d-flex justify-content-end">
+                <span><i class="fas fa-angle-up"></i></span>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                  <span id="slideValue" class=" d-flex justify-content-center text-body">$<output name="ageOutputName" id="ageOutputId">600</output></span>
+                  <div class="slidecontainer d-flex justify-content-center ">
+                      <input type="range" name="ageInputName" class="slider" id="ageInputId" value="600" min="60" max="2000" oninput="ageOutputId.value = ageInputId.value"
+                       style="width: 100%;">
+                  </div>            
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <span>$60</span>
+              </div>
+              <div class="col-6 d-flex justify-content-end">
+                <span>$2000</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row pt-2">
+              <div class="col-6 text-body ">
+                <h6>Brands</h6>
+              </div>
+              <div class="col-6 d-flex justify-content-end">
+                <span><i class="fas fa-angle-up"></i></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 border-bottom">
+                <label class="list-group-item border-0 text-black-50">
+                  <input class="form-check-input me-1 rounded-pill" type="checkbox" value="" checked>
+                  Type 1 Wine
+                </label>
+                <label class="list-group-item border-0 text-black-50">
+                  <input class="form-check-input me-1 rounded-pill" type="checkbox" value="">
+                  Type 2 Wine
+                </label>
+                <label class="list-group-item border-0 text-black-50">
+                  <input class="form-check-input me-1 rounded-pill" type="checkbox" value="" checked>
+                  Type 3 Wine
+                </label>  
+              </div>
+            </div>
+          </div>
+          <div class="col-12 border-bottom">
+            <div class="row pt-2">
+              <div class="col-6 text-body ">
+                <h6>Brands</h6>
+              </div>
+              <div class="col-6 d-flex justify-content-end">
+                <span><i class="fas fa-angle-up"></i></span>
+              </div>
+            </div>
+            <div class="row pt-2">
+              <div class="col-12 input-group">
+                <input type="search" class="form-control rounded-pill" placeholder="Search" aria-label="Search"
+                aria-describedby="search-addon" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 pt-2">
+                <label class="list-group-item border-0 text-black-50">
+                  <input class="form-check-input me-1 rounded-pill" type="checkbox" value="" checked>
+                  Brand Type 1
+                </label>
+                <label class="list-group-item border-0 text-black-50">
+                  <input class="form-check-input me-1 rounded-pill" type="checkbox" value="">
+                  Brand Type 2
+                </label>
+                <label class="list-group-item border-0 text-black-50">
+                  <input class="form-check-input me-1 rounded-pill" type="checkbox" value="" >
+                  Brand Type 3
+                </label>  
+                <label class="list-group-item border-0 text-black-50">
+                  <input class="form-check-input me-1 rounded-pill" type="checkbox" value="" >
+                  Brand Type 4
+                </label>  
+              </div>
+            </div>
+          </div>
+          <div class="col-12 border-bottom pt-2">
+            <div class="row py-2">
+              <div class="col-6 text-body ">
+                <h6>Collection</h6>
+              </div>
+              <div class="col-6 d-flex justify-content-end">
+                <span><i class="fas fa-angle-up"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 border-bottom pt-2">
+            <div class="row py-2">
+              <div class="col-6 text-body ">
+                <h6>Rating</h6>
+              </div>
+              <div class="col-6 d-flex justify-content-end">
+                <span><i class="fas fa-angle-up"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 border-bottom pt-2">
+            <div class="row py-2">
+              <div class="col-6 text-body ">
+                <h6>Spaciel</h6>
+              </div>
+              <div class="col-6 d-flex justify-content-end">
+                <span><i class="fas fa-angle-up"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 pt-2 px-0">
+            <img src="images/virgin.jpeg" alt="mojito" style="width: 100%; height: 260px;">
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+      </div>
+
+      <div class="col-7">
+        <div class="row g-4">
+          <div class="col-md-12 col-lg-4 cards">
+            <div class="card h-100 p-3 border border-danger">
+              <img src="images/blenders.jpg" class="card-img-top" alt="..." style="height: 150px; width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center text-body">Blenders Pride</h5>
+                <p class="card-text text-center">Lorem Ipsum is simply <br>dummy text</p>
+                <p class="text-center text-body">price:$256</p>
+                <span class="d-flex justify-content-center"><button type="button" class="btn btn-danger rounded-pill" id="buy_now">Buy Now</button></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 cards">
+            <div class="card h-100 p-3">
+              <img src="images/matusalem.jpg" class="card-img-top" alt="..." style="height: 150px; width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center text-body">Matusalem</h5>
+                <p class="card-text text-center">Lorem Ipsum is simply <br>dummy text</p>
+                <p class="text-center text-body">price:$165</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 cards">
+            <div class="card h-100 p-3">
+              <img src="images/remy_martin.jpg" class="card-img-top" alt="..." style="height: 150px; width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center text-body">Blenders Pride</h5>
+                <p class="card-text text-center">Lorem Ipsum is simply <br>dummy text</p>
+                <p class="text-center text-body">price:$266</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-5">
+            <div class="card h-100 ">
+              <img src="images/glass.png" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 cards">
+            <div class="card h-100 p-3">
+              <img src="images/lamberhorst.jpg" class="card-img-top" alt="..." style="height: 150px; width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center text-body">Lamberhurst</h5>
+                <p class="card-text text-center">Lorem Ipsum is simply <br>dummy text</p>
+                <p class="text-center text-body">price:$686</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 cards">
+            <div class="card h-100 p-3">
+              <img src="images/hennessy.jpg" class="card-img-top" alt="..." style="height: 150px; width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center text-body">Hennessy</h5>
+                <p class="card-text text-center">Lorem Ipsum is simply <br>dummy text</p>
+                <p class="text-center text-body">price:$348</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 cards">
+            <div class="card h-100 p-3">
+              <img src="images/Old_monk_rum.jpg" class="card-img-top " alt="..." style="height: 150px; width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center text-body">Old Monk</h5>
+                <p class="card-text text-center">Lorem Ipsum is simply <br>dummy text</p>
+                <p class="text-center text-body">price:$256</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+      </div>
+      <div class="col-7 rounded-pill my-4 bg-white " id="pages">
+        <div class="row align-items-center">
+          <div class="col-2">
+            <i class="fas fa-long-arrow-alt-left"></i>
+            <span>PREV</span>
+          </div>
+          <div class="col-8">
+            <ul class="pagination justify-content-center m-0 ">
+              <li class="page-item"><a class="page-link border-0 text-black-50" href="#">1</a></li>
+              <li class="page-item"><a class="page-link border-0 text-black-50" href="#">2</a></li>
+              <li class="page-item active"><a class="page-link border-0 bg-danger rounded-pill text-white" href="#">3</a></li>
+              <li class="page-item "><a class="page-link border-0 text-black-50" href="#">4</a></li>
+              <li class="page-item"><a class="page-link border-0 text-black-50" href="#">5</a></li>
+              <li class="page-item"><a class="page-link border-0 text-black-50" href="#">...</a></li>
+              <li class="page-item"><a class="page-link border-0 text-black-50" href="#">10</a></li>
+            </ul>
+
+          </div>
+          <div class="col-2">
+            <span>NEXT</span>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+      </div>
+    </div>
+    <div class="row bg-white border-bottom">
+      <div class="col-1">
+      </div>
+      <div class="col-9 mt-2">
+        <ul class="nav justify-content-start">
+          <li class="nav-item">
+            <a class="nav-link text-body fw-bold" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body fw-bold" href="#">CATALOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body fw-bold" href="#">ORDERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body fw-bold" href="#">WISHLIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body fw-bold" href="#">ACCOUNT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-1 mt-2">
+        <select id="select-len" class="form-select-md text-black-50 mt-2 border-0 bg-white"
+        aria-label="Default select example">
+        <option value="USD">English 🇺🇸&emsp;</option>
+        <option value="FR">French 🇫🇷&emsp;</option>
+        <option value="ES">Spanish 🇪🇸&emsp;</option>
+        </select>
+      </div>
+      <div class="col-1">
+
+      </div>
+    </div>
+    <div class="row bg-white py-2">
+      <div class="col-1">
+      </div>
+      <div class="col-8">
+        <ul class="nav justify-content-start">
+          <li class="nav-item">
+            <a class="nav-link text-black-50" href="#">Payment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-50" href="#">Shipping</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-50" href="#">Terms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-50" href="#">Refunds</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-50" href="#">Help Center</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-3 mt-2">
+        <span id="copyrights">Copyrights 2019@jay,All rights reserved</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
