@@ -1,0 +1,56 @@
+.container {
+    background-color: rgb(245,245,245);
+}
+
+
+#search_bar {
+    padding: 10px 20px ;
+    margin-bottom: 2px;
+}
+
+#search_button {
+    margin-left: -30px;
+}
+
+#items {
+    margin-right: 2px;
+}
+
+#bag {
+    margin-left:5px ;
+    color: #14b6ea;
+
+}
+
+#down {
+    margin-left: 3px;
+    color: #14b6ea;
+}
+
+#searchwine {
+    padding: 10px 15px;
+    margin-top: -25px;
+}
+
+.popular {
+    color: #14b6ea;
+}
+
+.cards {
+    height: 380px;
+}
+
+#buy_now {
+    padding: 10px 40px;
+    margin-top: 8px;
+    position: absolute;
+    bottom: -19px;
+}
+
+#pages {
+    padding: 15px 20px;
+}
+
+
+
+
