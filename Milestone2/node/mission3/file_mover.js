@@ -8,8 +8,8 @@ const fs = require("fs");
 // })();
 
 
-const oldPath = './files_to_move/'
-let newPath = './moved_files'
+const oldPath = 'files_to_move/.txt';
+let newPath = 'moved_files';
 
 // const filesName = fs.readdirSync(oldPath);
 // console.log(filesName);
