@@ -1,7 +1,9 @@
 //mission 1-a
 const getPromise = (num) => {
-    return new Promise((resolve, reject) => {
-        resolve("message info: " + num);
+    return new Promise((resolve) => {
+         setTimeout(() => {
+            resolve("message info: " + num);
+         }, 3000)
     });
 };
 // getPromise(5).then((resolve) => console.log(resolve));
@@ -12,7 +14,7 @@ const getString = (value) => {
     return new Promise ((resolve, reject) => {
     value === 'good' ? resolve('ok') : reject('the message is incorrect') })
 }
-// getString('good').then (resolve => console.log(resolve)).catch( err => console.log(err));
+// getString('goodfd').then (resolve => console.log(resolve)).catch( err => console.log(err));
 
 
 //mission 1-c
@@ -29,28 +31,30 @@ const getNumbers = (num1, num2) => {
         }
     });
 };
-// getNumbers(4,5).then(resolve => console.log(resolve))
-// .catch(reject => console.log(reject));
+// getNumbers(4,'fdgfg').then(resolve => console.log(resolve))
+// .catch(reject => console.log(reject + '!'));
 
-
-//mission 2
-// Promise.all([
-//    getString('good'),
-//    getPromise(5),
-//    getNumbers(1,3) 
-// ]).then((resolve) => {
-//     console.log(resolve)
-// });                
-
-
+// mission 2
+function getPositive() {
+    getString('good').then((resolve) => {
+        console.log(resolve);
+        getPromise(5).then((resolve) => {
+            console.log(resolve);
+            getNumbers(1,3).then((resolve) => {
+                console.log(resolve);
+            })
+        })
+    })
+}    
+getPositive();
 
 //mission 3
 function getNegative() {
     getNumbers(4, 'dfgdf').catch ((reject) => {
         console.log(reject);
-    })
-    getString('nogood').catch((rej) => {
-        console.log(rej);
+        getString('nogood').catch((rej) => {
+            console.log(rej);
+        })
     })
 };
 // getNegatine();
@@ -60,13 +64,12 @@ function getNegative() {
 function mission4() {
     getPromise(5).then((resolve) => {
         console.log(resolve);
+        getString('good').then((resolve) => {
+            console.log(resolve);
+            getNumbers(2,4).then((resolve) => {
+                console.log(resolve);
+            });
+        });    
     });
-    getString('good').then((resolve) => {
-        console.log(resolve);
-    });
-    getNumbers(2,4).then((resolve) => {
-        console.log(resolve);
-    })
 };
-// mission5();
-
+// mission4();
