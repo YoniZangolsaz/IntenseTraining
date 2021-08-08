@@ -1,4 +1,5 @@
 const fs = require('fs-extra');
+const { FORMERR } = require('node:dns');
 let prompt = require('prompt-sync')();
 
 // console.log(`press the right number ${num}`);
@@ -9,7 +10,9 @@ while(counter === 1 ) {
     console.log("menu \n1: Delete file \n2: Create file \n3: Write text to a file " +
     "\n4: Create folder \n9: Enter 9 to exit  ");
     let num = prompt("")
+    
     switch(num) {
+
         case ("1"):
             const deleteFile = require('./deleteFile')
             deleteFile;
