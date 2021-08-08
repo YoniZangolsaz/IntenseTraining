@@ -6,7 +6,7 @@ function deleteFile() {
     console.log("enter name of file to delete ");
     let file = prompt("")
     try {
-        fs.unlinkSync(file)
+        fs.unlinkSync(`./folderForMissions/${file}`)
         console.log('the file remove successfully');
         //file removed
       } catch(err) {
